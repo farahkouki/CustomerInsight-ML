@@ -41,21 +41,16 @@ Non supervisé : K-Means Clustering pour classifier les clients selon leur profi
 | POST    | `/api/predict/spending`          | `{"age": 30, "income": 50000}`            | `{"predictedSpending": 2850}` |
 | POST    | `/api/predict/cluster`           | `{"age": 30, "income": 50000}`            | `{"cluster": 2, "label": "Haut revenu - Jeune"}` |
 
-🌈 Frontend (React)
-Technologies : React • Axios • Chart.js (ou Recharts) • TailwindCSS / CSS Modules
-🚀 Lancer le frontend
+## 🌈 Frontend (React)
+**Technologies** : React • Axios • Chart.js (ou Recharts) • TailwindCSS / CSS Modules
+
+###🚀 Lancer le frontend
+
 Bashcd frontend
 npm install
 npm start
 Ouvrir : http://localhost:3000
 ---
-## 🗂 Structure du projet
-mlservice-project/
-├── backend/          → Spring Boot (Java 17 + WebFlux)
-├── frontend/         → React App (Vite/Create-React-App)
-├── python-ml/        → Modèle ML + script d'inférence (optionnel)
-└── assets/           → Images, bannières, etc.
-
 ### Exemple de requête cURL
 # Prédiction de dépenses
 curl -X POST http://localhost:8080/api/predict/spending \
