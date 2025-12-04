@@ -49,29 +49,8 @@ npm start
 Ouvrir : http://localhost:3000
 
 🔄 Diagramme de flux d'architecture
+<img width="1365" height="280" alt="image" src="https://github.com/user-attachments/assets/4ae66803-ee03-4a86-a1bc-af0c8d0b9af7" />
 
-flowchart LR
-    subgraph Frontend [Frontend]
-        A[React App<br/>Formulaires<br/>Graphiques interactifs]
-    end
-
-    subgraph Backend [Backend]
-        B[Spring Boot WebFlux<br/>Java 17<br/>Contrôleurs réactifs]
-    end
-
-    subgraph ML [Machine Learning]
-        C[Python Service<br/>scikit-learn<br/>Modèle entraîné]
-    end
-
-    A -->|POST JSON| B
-    B -->|ProcessBuilder<br/>ou REST interne| C
-    C -->|Résultat JSON| B
-    B -->|Réponse JSON| A
-
-    style A fill:#dbeafe,stroke:#4338ca,stroke-width:3px
-    style B fill:#f3e8ff,stroke:#7c3aed,stroke-width:3px
-    style C fill:#ecfccb,stroke:#84cc16,stroke-width:3px
-    
 ### Exemple de requête cURL
 # Prédiction de dépenses
 curl -X POST http://localhost:8080/api/predict/spending \
