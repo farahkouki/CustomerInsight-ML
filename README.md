@@ -3,8 +3,14 @@
 
 **Application full-stack de Machine Learning** combinant un **modèle Python (scikit-learn)**, un **backend réactif Spring Boot (WebFlux)** et un **frontend moderne en React**.
 
-Prédiction en temps réel de dépenses clients et classification par clustering !
-
+L’application permet de :
+💰 Prédire les dépenses d’un client (supervisé)
+📈 Classer les clients par clusters (non supervisé)
+⚡ Réponses instantanées grâce à WebFlux et WebClient
+---
+🧠 Algorithmes utilisés
+Supervisé : Linear Regression pour la prédiction des dépenses (spending)
+Non supervisé : K-Means Clustering pour classifier les clients selon leur profil (cluster)
 ---
 
 ## ⚡ Fonctionnalités
