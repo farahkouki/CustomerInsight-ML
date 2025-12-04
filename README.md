@@ -1,6 +1,5 @@
 # 🚀 ML Service Project
 
-![ML Banner](https://raw.githubusercontent.com/tonnom/mlservice-project/main/assets/banner.png)
 
 **Application full-stack de Machine Learning** combinant un **modèle Python (scikit-learn)**, un **backend réactif Spring Boot (WebFlux)** et un **frontend moderne en React**.
 
@@ -50,8 +49,29 @@ npm start
 Ouvrir : http://localhost:3000
 
 🔄 Diagramme de flux d'architecture
-![mermaid-diagram](https://github.com/user-attachments/assets/d4569572-f28a-4b54-a445-c6a80e06ac9b)
 
+flowchart LR
+    subgraph Frontend [Frontend]
+        A[React App<br/>Formulaires<br/>Graphiques interactifs]
+    end
+
+    subgraph Backend [Backend]
+        B[Spring Boot WebFlux<br/>Java 17<br/>Contrôleurs réactifs]
+    end
+
+    subgraph ML [Machine Learning]
+        C[Python Service<br/>scikit-learn<br/>Modèle entraîné]
+    end
+
+    A -->|POST JSON| B
+    B -->|ProcessBuilder<br/>ou REST interne| C
+    C -->|Résultat JSON| B
+    B -->|Réponse JSON| A
+
+    style A fill:#dbeafe,stroke:#4338ca,stroke-width:3px
+    style B fill:#f3e8ff,stroke:#7c3aed,stroke-width:3px
+    style C fill:#ecfccb,stroke:#84cc16,stroke-width:3px
+    
 ### Exemple de requête cURL
 # Prédiction de dépenses
 curl -X POST http://localhost:8080/api/predict/spending \
