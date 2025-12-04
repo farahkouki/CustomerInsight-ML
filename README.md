@@ -1,11 +1,15 @@
 # 🚀 ML Service Project
 
 
-**Application full-stack de Machine Learning** combinant un **modèle Python (scikit-learn)**, un **backend réactif Spring Boot (WebFlux)** et un **frontend moderne en React**.
+Application full-stack de Machine Learning combinant :
+Python (scikit-learn) pour le modèle ML
+Backend réactif Spring Boot (WebFlux)
 
+Frontend moderne en React
 L’application permet de :
-💰 Prédire les dépenses d’un client (supervisé)
-📈 Classer les clients par clusters (non supervisé)
+💰 Prédire les dépenses d’un client (algorithme supervisé)
+📊 Classifier les clients par clusters (algorithme non supervisé)
+
 ⚡ Réponses instantanées grâce à WebFlux et WebClient
 ---
 🧠 Algorithmes utilisés
@@ -44,7 +48,7 @@ Non supervisé : K-Means Clustering pour classifier les clients selon leur profi
 ## 🌈 Frontend (React)
 **Technologies** : React • Axios • Chart.js (ou Recharts) • TailwindCSS / CSS Modules
 
-###🚀 Lancer le frontend
+🚀 Lancer le frontend
 
 Bashcd frontend
 npm install
