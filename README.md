@@ -13,8 +13,8 @@ L’application permet de :
 ⚡ Réponses instantanées grâce à WebFlux et WebClient
 --- 
 🧠 Algorithmes utilisés
-Supervisé : Linear Regression pour la prédiction des dépenses (spending)
 ---
+Supervisé : Linear Regression pour la prédiction des dépenses (spending)
 Non supervisé : K-Means Clustering pour classifier les clients selon leur profil (cluster)
 
 
