@@ -19,13 +19,8 @@ Prédiction en temps réel de dépenses clients et classification par clustering
 | 🛠 **Stack moderne**                   | Java 17 • React • Python • Maven • npm          |
 
 ---
-
-## 🗂 Structure du projet
-mlservice-project/
-├── backend/          → Spring Boot (Java 17 + WebFlux)
-├── frontend/         → React App (Vite/Create-React-App)
-├── python-ml/        → Modèle ML + script d'inférence (optionnel)
-└── assets/           → Images, bannières, etc.
+🔄 Diagramme de flux d'architecture
+<img width="1365" height="280" alt="image" src="https://github.com/user-attachments/assets/4ae66803-ee03-4a86-a1bc-af0c8d0b9af7" />
 
 ---
 
@@ -47,9 +42,13 @@ Bashcd frontend
 npm install
 npm start
 Ouvrir : http://localhost:3000
-
-🔄 Diagramme de flux d'architecture
-<img width="1365" height="280" alt="image" src="https://github.com/user-attachments/assets/4ae66803-ee03-4a86-a1bc-af0c8d0b9af7" />
+---
+## 🗂 Structure du projet
+mlservice-project/
+├── backend/          → Spring Boot (Java 17 + WebFlux)
+├── frontend/         → React App (Vite/Create-React-App)
+├── python-ml/        → Modèle ML + script d'inférence (optionnel)
+└── assets/           → Images, bannières, etc.
 
 ### Exemple de requête cURL
 # Prédiction de dépenses
